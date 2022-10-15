@@ -43,7 +43,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "shell",
       filename: "remoteEntry.js",
-      remotes: {Header: `promise new Promise(resolve => {
+      remotes: {
+        Header: `promise new Promise(resolve => {
         const remoteUrl = 'http://localhost:8080/remoteEntry.js'
         const script = document.createElement('script')
         script.src = remoteUrl
