@@ -13,3 +13,8 @@ bower_components
 psd
 thumb
 sketch
+
+### Svelte ###
+
+.svelte-kit/
+package
