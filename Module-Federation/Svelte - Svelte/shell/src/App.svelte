@@ -1,5 +1,9 @@
-{#await import("Header/Header") then Header}
+{#await import("Header/Header")}
+    <div>Loading...</div>
+{:then Header}
 	<Header.default counter={counter} />
+{:catch error}
+    <p>{error.message}</p>
 {/await}
 
 <div class="container">
